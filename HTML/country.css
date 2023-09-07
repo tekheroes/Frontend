@@ -1,0 +1,37 @@
+@media screen {
+    tr:nth-child(odd) {
+        background: yellow;
+    }
+    tr:nth-child(even) {
+        background: pink;
+    }
+}
+
+@media print {
+    tr:nth-child(odd) {
+        background: lightgray;
+    }
+    tr:nth-child(even) {
+        background: grey;
+    }
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+body {
+    background-color: aquamarine; 
+    color: teal; 
+    margin: 50pt;
+}
+table {
+    border: 5pt ridge;
+    border-color: tomato;
+    width: 50%;
+}
+td, th {
+    border:1pt solid;
+    border-color: red;
+    padding: 10pt;
+}

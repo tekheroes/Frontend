@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="wheat" text="spinach">
+<h1>Registration Form</h1>
+<form method="post">
+<table width="400" border="1" cellspacing="0" bordercolor=tomato>
+<tr><td>Username</td>
+	<td><input name="username"></td>
+</tr>
+<tr><td>Password</td>
+	<td><input type="password" name="password"></td>
+</tr>
+<tr><td>Gender</td>
+	<td><input type="radio" name="gender" value="Male" checked>Male
+		<input type="radio" name="gender" value="Female">Female</td>
+</tr>
+<tr><td>City</td>
+	<td><select name="city">
+			<option>Mumbai</option>
+			<option>Pune</option>
+			<option>Nagpur</option>
+		</select></td>
+</tr>
+<tr><td>Hobbies</td>
+	<td><input type="checkbox" name="music" checked>Music
+		<input type="checkbox" name="movies">Movies
+		<input type="checkbox" name="games">Games</td>
+</tr>
+<tr><td>About</td>
+	<td><textarea name="about">Here...</textarea></td>
+</tr>
+<tr><th><input type="submit" value="Register"></th>
+	<th><input type="reset" value="Cancel"></th>
+</tr>
+</table>
+</form>
+</body>
+</html>

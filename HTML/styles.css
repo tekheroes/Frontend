@@ -1,0 +1,29 @@
+* {
+    font-family: verdana;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+p, div {
+    font-size: 15pt;
+}
+
+div {
+    color: coral;
+}
+
+p {
+    color: navy;
+}
+
+p.parcls {
+    border: 5pt outset;
+    border-color: olive;
+}
+
+#divid {
+    background-color: paleturquoise;
+}
