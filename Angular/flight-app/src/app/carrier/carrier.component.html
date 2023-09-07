@@ -1,0 +1,19 @@
+<label>Select Carrier: </label>
+<select name="carrier" [(ngModel)]="carrier">
+    <option *ngFor="let c of carriers" [value]="c">{{ c }}</option>
+</select>
+<button class="btn btn-success" (click)="search()">Search By Carrier</button>
+<hr>
+<table>
+    <thead>
+        <tr><th>Code</th><th>Carrier</th><th>Source</th><th>Destination</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let f of flights">
+            <td>{{ f.code }}</td>
+            <td>{{ f.carrier }}</td>
+            <td>{{ f.source }}</td>
+            <td>{{ f.destination }}</td>
+        </tr>
+    </tbody>
+</table>

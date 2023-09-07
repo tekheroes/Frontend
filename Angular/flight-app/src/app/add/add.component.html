@@ -1,0 +1,21 @@
+<form (ngSubmit)="save()">
+    <label>Code</label>
+    <input type="text" name="code" [(ngModel)]="flight.code">
+    <br>
+    <label>Carrier</label>
+    <select name="carrier" [(ngModel)]="flight.carrier">
+        <option *ngFor="let c of carriers" [value]="c">{{ c }}</option>
+    </select>
+    <br>
+    <label>Source City</label>
+    <select name="source" [(ngModel)]="flight.source">
+        <option *ngFor="let c of cities" [value]="c">{{ c }}</option>
+    </select>
+    <br>
+    <label>Destination City</label>
+    <select name="dest" [(ngModel)]="flight.destination">
+        <option *ngFor="let c of cities" [value]="c">{{ c }}</option>
+    </select>
+    <br>
+    <button class="btn btn-primary" type="submit">Save Flight</button>
+</form>
