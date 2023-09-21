@@ -11,7 +11,8 @@ export class ListComponent implements OnInit {
   flights : Flight[] = [];
 
   constructor(private service : FlightService) { 
-    this.flights = this.service.list();
+    this.service.list().subscribe(data => this.flights = data);
+    // this.flights = this.service.list();
   }
 
   ngOnInit(): void {
@@ -21,8 +22,8 @@ export class ListComponent implements OnInit {
     this.flights.sort((a, b) => a.code - b.code);
   }
 
-  remove(i : number) {
+  remove(code : number) {
     if(confirm("Are you sure to delete?"))
-      this.service.delete(i);
+      this.service.delete(code);
   }
 }

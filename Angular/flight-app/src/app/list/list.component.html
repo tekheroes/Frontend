@@ -3,12 +3,12 @@
         <tr><th (click)="sort()">Code</th><th>Carrier</th><th>Source</th><th>Destination</th><th>Action</th></tr>
     </thead>
     <tbody>
-        <tr *ngFor="let f of flights; let i = index">
+        <tr *ngFor="let f of flights">
             <td>{{ f.code }}</td>
             <td>{{ f.carrier }}</td>
             <td>{{ f.source }}</td>
             <td>{{ f.destination }}</td>
-            <td><button class="btn btn-danger" (click)="remove(i)">Delete</button></td>
+            <td><button class="btn btn-danger" (click)="remove(f.code)">Delete</button></td>
         </tr>
     </tbody>
 </table>

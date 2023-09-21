@@ -20,6 +20,7 @@ export class RouteComponent implements OnInit {
   }
 
   search() {
-    this.flights = this.service.byRoute(this.source, this.destination);
+    this.service.byRoute(this.source, this.destination).subscribe(data => this.flights = data);
+    // this.flights = this.service.byRoute(this.source, this.destination);
   }
 }

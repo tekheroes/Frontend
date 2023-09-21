@@ -1,0 +1,6 @@
+[
+    {"code":121, "carrier" : "Jet", "source" : "Washington", "destination" : "Los Angeles"},
+    {"code":221, "carrier" : "Delta", "source" : "Chicago", "destination" : "Las Vegas"},
+    {"code":122, "carrier" : "Jet", "source" : "Washington", "destination" : "New York"},
+    {"code":231, "carrier" : "Delta", "source" : "Washington", "destination" : "Los Angeles"}
+]

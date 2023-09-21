@@ -8,6 +8,7 @@ import { AddComponent } from './add/add.component';
 import { ListComponent } from './list/list.component';
 import { CarrierComponent } from './carrier/carrier.component';
 import { RouteComponent } from './route/route.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RouteComponent } from './route/route.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

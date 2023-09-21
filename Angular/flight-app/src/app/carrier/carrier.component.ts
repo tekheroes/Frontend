@@ -18,6 +18,7 @@ export class CarrierComponent implements OnInit {
   }
 
   search() {
-    this.flights = this.service.byCarrier(this.carrier);
+    this.service.byCarrier(this.carrier).subscribe(data => this.flights = data);
+    // this.flights = this.service.byCarrier(this.carrier);
   }
 }
