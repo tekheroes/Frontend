@@ -1,0 +1,18 @@
+<form (ngSubmit)="save()" class="was-validated">
+    Customer ID:
+    <input name="custId" [(ngModel)]="c.custId" required pattern="[1-9][0-9]{2,}" class="form-control">
+    <br>
+    Customer Name: 
+    <input name="name" [(ngModel)]="c.name" required pattern="[A-Z][a-z]{3,}" class="form-control">
+    <br>
+    Customer Phone No:
+    <input name="phone" [(ngModel)]="c.phone" required pattern="[6-9][0-9]{9}" class="form-control">
+    <br>
+    Customer Password:
+    <input type="password" name="password" [(ngModel)]="c.password" required pattern="[A-Za-z0-9]{6,}" class="form-control">
+    <br>
+    Customer License No:
+    <input name="license" [(ngModel)]="c.licenseNo" required pattern="[A-Za-z0-9]{6,}" class="form-control">
+    <br>
+    <button type="submit" class="btn btn-primary">Register Customer</button>
+</form>

@@ -1,0 +1,13 @@
+<form (ngSubmit)="authenticate()" class="was-validated">
+    <label>Phone No: </label>
+    <input name="phone" [(ngModel)]="phone" class="form-control" required 
+    pattern="[6-9][0-9]{9}">
+    <br>  
+    <label>Password: </label>
+    <input name="pass" [(ngModel)]="password" class="form-control" required 
+    pattern="[A-Za-z0-9]{6,}">
+    <br>
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+<br>
+<a [routerLink]="['/register']">New Customer Register Here!</a>

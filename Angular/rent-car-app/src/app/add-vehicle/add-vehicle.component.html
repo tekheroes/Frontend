@@ -1,0 +1,17 @@
+<form (ngSubmit)="save()" class="was-validated">
+    Registration No:
+    <input name="regNo" [(ngModel)]="v.regNo" required pattern="[A-Z]{3}[0-9]{3,}" class="form-control">
+    <br>
+    Vehicle Model:
+    <input name="model" [(ngModel)]="v.model" required pattern="^[a-zA-Z]+(\s[a-zA-Z]+)?$" class="form-control">
+    <br>
+    Vehicle Type:
+    <select name="type" [(ngModel)]="v.type" required class="form-control">
+        <option *ngFor="let t of types" [value]="t">{{ t }}</option>
+    </select>
+    <br>
+    Rate/Day:
+    <input name="rate" [(ngModel)]="v.rate" required pattern="[1-9][0-9]{1,}" class="form-control">
+    <br>
+    <button type="submit" class="btn btn-primary">Save Vehicle</button>
+</form>

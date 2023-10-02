@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+        <tr class="table-primary">
+            <th>Registration No</th>
+            <th>Model</th>
+            <th>Type</th>
+            <th>Rate/Day</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let v of vehicles, let i = index">
+            <td>{{ v.regNo }}</td>
+            <td>{{ v.model }}</td>
+            <td>{{ v.type }}</td>
+            <td>{{ v.rate | currency }}</td>
+            <td><button (click)="book(i)" class="btn btn-success">Book</button></td>
+        </tr>
+    </tbody>
+</table>

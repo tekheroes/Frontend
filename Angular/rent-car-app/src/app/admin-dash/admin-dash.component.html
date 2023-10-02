@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Hello, Admin</a>
+  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/admin/add']">Add Vehicles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/admin/list']">List All Vehicles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">List All Invoices</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/admin/customers']">List All Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+</nav>
+<br>
+<router-outlet></router-outlet>

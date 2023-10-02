@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+        <tr class="table-primary">
+            <th>Invoice No</th>
+            <th>Booking Date</th>
+            <th>No of days</th>
+            <th>Invoice Total</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of invoices">
+            <td>{{ i.id }}</td>
+            <td>{{ i.hireDate | date }}</td>
+            <td>{{ i.days }}</td>
+            <td>{{ i.total | currency }}</td>
+            <td><button [disabled]="i.returned" (click)="returned(i.id)" class="btn btn-info">Return</button></td>
+        </tr>
+    </tbody>
+</table>
