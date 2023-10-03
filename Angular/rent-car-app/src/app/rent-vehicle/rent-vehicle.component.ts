@@ -14,17 +14,19 @@ export class RentVehicleComponent implements OnInit {
   v : Vehicle = new Vehicle();
   c : Customer = new Customer();
   b : Billing = new Billing();
-  amt : number = 0;
+
 
   constructor(private service : BillingService, private router : Router) { 
     this.c = JSON.parse(localStorage.getItem("User")!);
     this.v = JSON.parse(localStorage.getItem("Vehicle")!);
     this.b.custId = this.c.custId;
     this.b.regNo = this.v.regNo;
+    this.b.days = 1;
+    this.b.total = this.v.rate;
   }
 
   calAmt() {
-    this.amt = this.b.days * this.v.rate;
+    this.b.total = this.b.days * this.v.rate;
   }
 
   save() {

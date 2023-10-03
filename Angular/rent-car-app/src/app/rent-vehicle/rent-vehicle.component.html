@@ -8,6 +8,6 @@
         <td><input type="date" name="hd" [(ngModel)]="b.hireDate"></td></tr>
     <tr><th>Choose Days</th>
         <td><input type="number" (change)="calAmt()" name="days" min="1" max="7" [(ngModel)]="b.days"></td></tr>
-    <tr><th>Invoice Amount</th><td>{{ amt | currency }}</td></tr>
+    <tr><th>Invoice Amount</th><td>{{ b.total | currency }}</td></tr>
 </table>
 <button (click)="save()" class="btn btn-primary">Confirm Booking</button>

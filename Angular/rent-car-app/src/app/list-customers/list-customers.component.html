@@ -13,7 +13,7 @@
             <td>{{ c.custId }}</td>
             <td>{{ c.name }}</td>
             <td>{{ c.phone }}</td>
-            <td>{{ c.password }}</td>
+            <td>{{ c.password | password : '#'}}</td>
             <td>{{ c.licenseNo }}</td>
         </tr>
     </tbody>

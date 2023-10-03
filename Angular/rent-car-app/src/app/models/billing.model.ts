@@ -3,4 +3,5 @@ export class Billing {
     days : number = 0;
     custId : number = 0;
     regNo : string = '';
+    total : number = 0;
 }

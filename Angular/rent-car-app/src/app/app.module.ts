@@ -15,6 +15,7 @@ import { AddVehicleComponent } from './add-vehicle/add-vehicle.component';
 import { ListVehiclesComponent } from './list-vehicles/list-vehicles.component';
 import { RentVehicleComponent } from './rent-vehicle/rent-vehicle.component';
 import { ListCustomersComponent } from './list-customers/list-customers.component';
+import { PasswordPipe } from './pipes/password.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListCustomersComponent } from './list-customers/list-customers.componen
     AddVehicleComponent,
     ListVehiclesComponent,
     RentVehicleComponent,
-    ListCustomersComponent
+    ListCustomersComponent,
+    PasswordPipe
   ],
   imports: [
     BrowserModule,
